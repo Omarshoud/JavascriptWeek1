@@ -1,0 +1,21 @@
+{
+    "name": "Javascript week 1",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "",
+        "lint": "eslint ."
+    },
+    "keywords": [],
+    "author": "Omar Marshoud",
+    "license": "ISC",
+    "prettier": {
+        "singleQuote": true
+    },
+    "devDependencies": {
+        "eslint": "^8.26.0",
+        "eslint-config-airbnb-base": "^50.0.0",
+        "eslint-plugin-import": "^2.26.0"
+    }
+}
