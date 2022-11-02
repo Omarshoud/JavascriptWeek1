@@ -1,12 +1,12 @@
-import strictEquals from './app';
+import strictEquals from './app.js';
 
 console.table([
-    { test: '1 & 1', result: strictEquals(1, 1) },
-    { test: 'NaN & NaN', result: strictEquals(NaN, NaN) },
-    { test: '0 & -0', result: strictEquals(0, -0) },
-    { test: '-0 & 0', result: strictEquals(-0, 0) },
-    { test: '1 & "1"', result: strictEquals(1, '1') },
-    { test: 'true & false', result: strictEquals(true, false) },
-    { test: 'false & false', result: strictEquals(false, false) },
-    { test: '"Water" & "oil"', result: strictEquals('Water', 'oil') },
+    { A: '1', B: '1', RESULT: strictEquals(1, 1) },
+    { A: 'NaN', B: 'NaN', RESULT: strictEquals(NaN, NaN) },
+    { A: '0', B: '-0', RESULT: strictEquals(0, -0) },
+    { A: '-0', B: '0', RESULT: strictEquals(-0, 0) },
+    { A: '1', B: '"1"', RESULT: strictEquals(1, '1') },
+    { A: 'true', B: 'false', RESULT: strictEquals(true, false) },
+    { A: 'false', B: 'false', RESULT: strictEquals(false, false) },
+    { A: '"water"', B: '"oil"', RESULT: strictEquals('Water', 'oil') },
 ]);
